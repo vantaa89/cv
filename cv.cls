@@ -2,7 +2,7 @@
 
 \LoadClass[10pt, A4]{article} % Font size and paper type
 
-\usepackage[left=2.5cm, top=1.5cm, right=2.5cm, bottom=1.5cm]{geometry}
+\usepackage[left=2cm, top=1.5cm, right=2cm, bottom=1.5cm]{geometry}
 
 \usepackage[parfill]{parskip} % Remove paragraph indentation
 \usepackage{array}
@@ -40,17 +40,17 @@
         
         {\href{mailto:\mail}{\texttt{\mail}} \hspace{2mm} $\cdot$ \hspace{2mm} \phone}
     \end{center}
-    \vspace{10mm}
+    \vspace{5mm}
 }
 
 
 % cvsection
 \newcommand*{\cvsection}[1]{
-    \vspace{3mm}
+    \vspace{2mm}
     {\large{\textsc{#1}}
     \vspace{1.5mm}
     \hrule
-    \vspace{1.5mm}
+    \vspace{0.5mm}
     }
 }
 
@@ -64,12 +64,11 @@
     {
     %\renewcommand\labelitemi{}
     \normalsize
-    \begin{itemize}[leftmargin=15pt]\setlength\itemsep{-1mm}
+    \begin{itemize}[leftmargin=15pt]\setlength\itemsep{-2mm}
         \vspace{-1mm}
         #5
     \end{itemize}
     }
-    \vspace{2mm}
 }
 
 
@@ -97,7 +96,7 @@
     \end{tabular*}
     }
     
-    \vspace{-2mm}
+    \vspace{-4mm}
 }
 
 
@@ -112,4 +111,8 @@
     }
     
     \vspace{1mm}
+}
+
+\newcommand*{\cvpublication}[2]{
+    
 }
