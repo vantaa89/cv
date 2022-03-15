@@ -9,6 +9,8 @@
 \usepackage{fontspec}
 \usepackage{xcolor}
 \usepackage{enumitem}
+\usepackage{comment}
+\usepackage{ifthen}
 \usepackage{kotex}[hangul]
 
 \usepackage[hidelinks]{hyperref} % remove color from links
@@ -30,15 +32,17 @@
 \def \mail {}
 \def \phone {}
 
+\newcounter{pubcnt}
+\setcounter{pubcnt}{0}
 
 
 % cvheader
 
 \newcommand*{\cvheader}[0]{
     \begin{center}
-        {\huge \textbf{\name} (\altname)\vspace{0mm}}
+        {\huge \textbf{\name} \ifthenelse{\equal{\altname}{}}{}{(\altname)}  \vspace{0mm}}
         
-        {\href{mailto:\mail}{\texttt{\mail}} \hspace{2mm} $\cdot$ \hspace{2mm} \phone}
+        {\href{mailto:\mail}{\texttt{\mail}} \ifthenelse{\equal{\phone}{}}{}{\hspace{2mm} $\cdot$ \hspace{2mm} \phone}}
     \end{center}
     \vspace{5mm}
 }
@@ -113,6 +117,14 @@
     \vspace{1mm}
 }
 
-\newcommand*{\cvpublication}[2]{
-    
+\newcommand*{\cvpublication}[5]{
+    \stepcounter{pubcnt}
+    [\arabic{pubcnt}] #1, ``#2 ", \textit{#3}, #4, (#5)
+}
+
+\newcounter{honornum}
+\setcounter{honornum}{0}
+
+\newcommand*{\cvhonor}[2]{
+    #1\hfill {\small #2}$\;\;$\\
 }
