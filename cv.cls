@@ -114,7 +114,7 @@
         
     }
     
-    \vspace{1mm}
+    %\vspace{1mm}
 }
 
 \newcommand*{\cvpublication}[5]{
