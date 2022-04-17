@@ -13,7 +13,6 @@
 \usepackage{ifthen}
 \usepackage{kotex}[hangul]
 
-\usepackage[hidelinks]{hyperref} % remove color from links
 \usepackage{makecell}
 
 
@@ -81,7 +80,7 @@
     {
     \setlength{\labelsep}{5mm}
     \begin{tabular*}{\textwidth}{ m{3cm} l }
-        \textbf{#1} & #2
+        \hspace{-2mm}\textbf{#1} & #2
     \end{tabular*}
         
     }
@@ -114,7 +113,7 @@
         
     }
     
-    %\vspace{1mm}
+    \vspace{0mm}
 }
 
 \newcommand*{\cvpublication}[5]{

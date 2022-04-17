@@ -7,7 +7,7 @@
 \setmail{leeseojune@snu.ac.kr}
 \setphone{(+82) 10-7643-2441}
 
-
+\usepackage[]{hyperref} % remove color from links
 
 \begin{document}
 
@@ -17,7 +17,7 @@
 %%% INTERESTS
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\cvlargeline{Interests}{Biomedical Imaging, Natural Language Processing}
+%\cvlargeline{Interests}{Biomedical Imaging, Natural Language Processing}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -29,35 +29,18 @@
 \cventry{Seoul National University}{Seoul, Korea}
 {Undergraduate Student in Electrical and Computer Engineering}{Mar. 2021 - Present}
 {
-    \item Cumulative GPA: 4.24/4.3
-    %\item Minor: Linguistics
+    \item GPA: 4.24/4.3
 }
 \cventry{\href{http://ksa.hs.kr/}{Korea Science Academy of KAIST}}{Busan, Korea}
-{High School Student}{Feb. 2018 - Feb. 2021}
+{High School}{Feb. 2018 - Feb. 2021}
 {
-    \item Focused on Math, Physics, and Computer Science. Total GPA: 4.17/4.3
+    \item GPA: 4.17/4.3
 }
-
-\begin{comment}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%% Publications
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\cvsection{Publications}
-
-\cvpublication{A. B. Lee, C. D. Park, E.-F. Kang, \textbf{S. Lee}, G. Kim, and G.-D. Hong*}{Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor}{Appl. Phys. A}{\textbf{102}, 1027}{2016}
-
-\cvpublication{A. Jo, B.-C. Yang,B. Kim, D.-E. Lim, and G.-D. Hong*}{Nisl tincidunt eget nullam non Quis hendrerit dolor magna eget est lorem ipsum dolor sit}{Solar Energy}{\textbf{107}, 940}{2016}
-
-\end{comment}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%% HONORS & SCHOLARSHIPS
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
 \cvsection{Honors \& Scholarships}
 
 \cvhonor{\textbf{The National Scholarship for Science and Engineering}, \textit{Korea Student Aid Foundation}}{2021}
-\cvhonor{Hanseong Nobel Scholarship for the Gifted, \textit{Hanseong Sonjaehan Foundation}} {2018}
+\cvhonor{\href{http://www.sonjaehan.org/scholarship/highschool.php}{Hanseong Nobel Scholarship for the Gifted}, \textit{Hanseong Sonjaehan Foundation}} {2018}
+Awarded to 
 \cvhonor{Bronze Prize in Korea Olympiads in Informatics, \textit{Ministry of Science and ICT}}{2018}
 
 \vspace{-4mm}
@@ -69,8 +52,9 @@
 \cventry{On Wave Propagation in Hyperhelix Structures}{2019}
 {Advisor: Dr. Yongdeok Kim}{\textit{Korea Science Academy}}
 {
-    \item Implemented a simulator that analyzes mechanical wave propagation in curved waveguide \href{https://research.ksa.hs.kr/2019RNE_MAT02}{[paper]}
-    \item Gave a poster presentation on International Science Youth Forum (ISYF) @ Singapore 2020
+    \item Implemented a mechanical wave simulator for curved waveguide using python %\href{https://research.ksa.hs.kr/2019RNE_MAT02}{[paper]}
+    \item Took a lecture on numerical analysis, and implemented algorithms for solving PDEs
+    \item Gave a poster presentation at International Science Youth Forum (ISYF) @ Singapore 2020
 }
 
 
@@ -79,20 +63,8 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \cvsection{Skills}
 
-\cvline{Programming}{C++, Python, MatLab}
+\cvline{Programming}{C++, Python, MATLAB}
 \cvline{Tools}{Git, \LaTeX{}, PyTorch}
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%% EXTRACURRICULAR
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\cvsection{Extracurricular Activities}
-\cventry{Band Amplifier}{2021 - Present}
-{Keyboardist}{\textit{Seoul National University}}
-{
-    \item Band of department of electrical and computer engineering, SNU.
-}
-
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%% Relevant Coursework
@@ -101,23 +73,28 @@
 \textbf{Seoul National University}
 
 \cvcourse{2021-2}{Creative Engineering Design, Programming Methodology, Linear Algebra for Electrical Systems}
-\cvcourse{2022-1}{Signals and Systems, Introduction to Circuit Theory and Laboratory, \\ Introduction to Random Variables and Random Process, Computational Linguistics}
+\cvcourse{2022-1}{Signals and Systems, Introduction to Circuit Theory and Laboratory, Computational Linguistics}
 
 \textbf{Korea Science Academy of KAIST}
 \begin{itemize}
-    \item Linear Algebra, Differential Equations, Mathematical Modelling, Calculus III (Vector Calculus), \\ Data Structures, Computer Science Seminar (Machine Learning), Introduction to Modern Physics
+    \item Linear Algebra, Differential Equations, Mathematical Modelling, Calculus III (Vector Calculus), \\ Data Structures, Computer Science Seminar (DL and RL), Introduction to Modern Physics
 \end{itemize}
 
-
-\textbf{Independent Courses}
-\begin{itemize}
-    \item ``Build Basic Generative Adversarial Networks(GANs)", \textit{DeepLearning.AI}, Coursera \href{https://coursera.org/share/9645523a0b1ab41a76ccbe3cac57da39}{[certificate]}
-\end{itemize}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% EXTRACURRICULAR
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\cvsection{Extracurricular Activities}
+\cventry{\href{https://www.linkedin.com/company/outta아우타/}{OUTTA}}{2022 - Present}
+{Student Mentor}{\textit{Seoul National University}}
+{
+    \item A non-profit organization that provides machine learning mentoring to non-majoring students.
+}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%% MISCELLANIES
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \cvsection{Miscellanies}
-\cvline{English}{970/990 (TOEIC), 404/600 (TOEFL)}
+\cvline{English}{\hspace{-15mm}970/990 (TOEIC)}
+\cvline{Coursera}{\hspace{-15mm}Completed online course ``Build Basic GANs", \textit{DeepLearning.AI} \href{https://coursera.org/share/9645523a0b1ab41a76ccbe3cac57da39}{[certificate]}}
 
 \end{document}
