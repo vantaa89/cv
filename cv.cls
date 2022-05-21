@@ -49,7 +49,7 @@
 
 % cvsection
 \newcommand*{\cvsection}[1]{
-    \vspace{2mm}
+    %\vspace{2mm}
     {\large{\textsc{#1}}
     \vspace{1.5mm}
     \hrule
@@ -67,7 +67,7 @@
     {
     %\renewcommand\labelitemi{}
     \normalsize
-    \begin{itemize}[leftmargin=15pt]\setlength\itemsep{-2mm}
+    \begin{itemize}[leftmargin=15pt]\setlength\itemsep{-2.5mm}
         \vspace{-1mm}
         #5
     \end{itemize}
@@ -110,7 +110,7 @@
     \begin{tabular*}{\textwidth}{ m{1.2cm} l }
         #1 & \makecell[l]{#2}
     \end{tabular*}
-        
+        \vspace{-15pt}
     }
     
     \vspace{0mm}
