@@ -88,6 +88,19 @@
     \vspace{-1mm}
 }
 
+% wide cvline
+\newcommand*{\cvlinewide}[2]{
+    {
+    \setlength{\labelsep}{5mm}
+    \begin{tabular*}{\textwidth}{ m{6cm} l }
+        \hspace{-2mm}\textbf{#1} & #2
+    \end{tabular*}
+        
+    }
+    
+    \vspace{-1mm}
+}
+
 
 % cvlargeline
 \newcommand*{\cvlargeline}[2]{
