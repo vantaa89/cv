@@ -8,13 +8,17 @@
 \usepackage{array}
 \usepackage{fontspec}
 \usepackage{xcolor}
+\usepackage{tabularx}
 \usepackage{enumitem}
 \usepackage{comment}
 \usepackage{ifthen}
 \usepackage{kotex}[hangul]
 
 \usepackage{makecell}
-
+\newcommand{\PreserveBackslash}[1]{\let\temp=\\#1\let\\=\temp}
+\newcolumntype{C}[1]{>{\PreserveBackslash\centering}p{#1}}
+\newcolumntype{R}[1]{>{\PreserveBackslash\raggedleft}p{#1}}
+\newcolumntype{L}[1]{>{\PreserveBackslash\raggedright}p{#1}}
 
 \definecolor{darkgray}{HTML}{333333}
 
@@ -120,10 +124,15 @@
 \newcommand*{\cvcourse}[2]{
     {
     \setlength{\labelsep}{5mm}
-    \begin{tabular*}{\textwidth}{ m{1.2cm} l }
-        #1 & \makecell[l]{#2}
-    \end{tabular*}
-        \vspace{-15pt}
+    \noindent
+    \begin{tabularx}{\textwidth}{X R{2cm}}
+        #1 & \textit{#2}
+    \end{tabularx}
+
+    % \begin{tabular*}{\textwidth}{L{\textwidth-2cm} R{2cm} }
+    %     \makecell[l]{#1} & \textit{#2}
+    % \end{tabular*}
+        \vspace{-5pt}
     }
     
     \vspace{0mm}
