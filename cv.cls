@@ -89,7 +89,7 @@
         
     }
     
-    \vspace{-1mm}
+    \vspace{-2mm}
 }
 
 % wide cvline
@@ -102,7 +102,7 @@
         
     }
     
-    \vspace{-1mm}
+    \vspace{-2mm}
 }
 
 
