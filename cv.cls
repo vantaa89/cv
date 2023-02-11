@@ -12,6 +12,7 @@
 \usepackage{enumitem}
 \usepackage{comment}
 \usepackage{ifthen}
+\usepackage{fancyhdr}
 \usepackage{kotex}[hangul]
 
 \usepackage{makecell}
@@ -23,8 +24,6 @@
 \definecolor{darkgray}{HTML}{333333}
 
 
-
-\pagestyle{empty} % Suppress page numbers
 
 \def \setname#1 {\def\name{#1}}
 \def \setaltname#1 {\def\altname{#1}}
