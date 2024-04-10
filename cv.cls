@@ -30,10 +30,12 @@
 \def \setaltname#1 {\def\altname{#1}}
 \def \setphone#1 {\def\phone{#1}}
 \def \setmail#1 {\def\mail{#1}}
+\def \sethomepage#1 {\def\homepage{#1}}
 \def \name {} % name is empty unless it is defined
 \def \altname {}
 \def \mail {}
 \def \phone {}
+\def \homepage {}
 
 \newcounter{pubcnt}
 \setcounter{pubcnt}{0}
@@ -45,7 +47,9 @@
     \begin{center}
         {\huge \textbf{\name} \ifthenelse{\equal{\altname}{}}{}{(\altname)}  \vspace{0mm}}
         
-        {\href{mailto:\mail}{\texttt{\mail}} \ifthenelse{\equal{\phone}{}}{}{\hspace{2mm} $\cdot$ \hspace{2mm} \phone}}
+        {\href{mailto:\mail}{\texttt{\mail}} 
+        \ifthenelse{\equal{\phone}{}}{}{\hspace{1mm} $\cdot$ \hspace{1mm} \texttt{\phone}}
+        \ifthenelse{\equal{\homepage}{}}{}{\hspace{1mm} $\cdot$ \hspace{1mm} \href{\homepage}{\texttt{\homepage}}}}
     \end{center}
     \vspace{5mm}
 }
