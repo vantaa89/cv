@@ -46,8 +46,8 @@
 \newcommand*{\cvheader}[0]{
     \begin{center}
         {\huge \textbf{\name} \ifthenelse{\equal{\altname}{}}{}{(\altname)}  \vspace{0mm}}
-        
-        {\href{mailto:\mail}{\texttt{\mail}} 
+
+        {\href{mailto:\mail}{\texttt{\mail}}
         \ifthenelse{\equal{\phone}{}}{}{\hspace{1mm} $\cdot$ \hspace{1mm} \texttt{\phone}}
         \ifthenelse{\equal{\homepage}{}}{}{\hspace{1mm} $\cdot$ \hspace{1mm} \href{\homepage}{\texttt{\homepage}}}}
     \end{center}
@@ -90,9 +90,9 @@
     \begin{tabular*}{\textwidth}{ m{3cm} l }
         \hspace{-2mm}\textbf{#1} & #2
     \end{tabular*}
-        
+
     }
-    
+
     \vspace{-2mm}
 }
 
@@ -103,9 +103,9 @@
     \begin{tabular*}{\textwidth}{ m{6cm} l }
         \hspace{-2mm}\textbf{#1} & #2
     \end{tabular*}
-        
+
     }
-    
+
     \vspace{-2mm}
 }
 
@@ -119,8 +119,15 @@
         {\textsc{#1}} & {\normalsize #2}
     \end{tabular*}
     }
-    
+
     \vspace{-4mm}
+}
+
+\newcommand*{\cvlist}[1]{
+    \begin{itemize}[leftmargin=15pt]\setlength\itemsep{-2.5mm}
+        \vspace{-1mm}
+        #1
+    \end{itemize}
 }
 
 
@@ -138,7 +145,7 @@
     % \end{tabular*}
         \vspace{-5pt}
     }
-    
+
     \vspace{0mm}
 }
 
